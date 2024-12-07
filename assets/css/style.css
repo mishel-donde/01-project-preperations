@@ -1,0 +1,76 @@
+@font-face{
+    font-family: Sunday;
+    src: url('/assets/fonts/AdoretimePersonalUse-Regular.otf');
+}
+
+
+@keyframes fadeIn {
+    from{opacity: 0;} to {opacity: 1;} 
+
+}
+
+.task:last-child{
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.task > :nth-child(2) {
+    height: 160px;
+    overflow: scroll;
+  }
+
+
+header{
+    font-family: Sunday;
+    font-size: xxx-large;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+html,
+body{
+    background-image: url('/assets/image/tile.jpg');
+    margin: 0;
+    height: 100%;
+}
+
+
+form{
+    background-image: url('/assets/image/formbg.jpg');
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+}
+
+#tasks {
+    display: flex;
+    flex-direction: row;
+}
+
+.task {
+    padding: 20px;
+    width: 150px;
+    height: 200px;
+    background-image: url('/assets/image/notebg.png');
+
+
+}
+
+i {
+    display: none;
+}
+  
+.task:hover > i {
+    display: flex;
+    flex-direction: row-reverse;
+    cursor: pointer;
+}
+
+.task > div:nth-child(1) {
+
+    display: flex;
+    flex-direction: row-reverse;
+}
